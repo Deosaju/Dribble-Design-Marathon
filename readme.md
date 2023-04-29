@@ -6,7 +6,6 @@ The Dribble Design Marathon is a community-driven initiative aimed at helping de
 
 # LINKS OF DESIGNS
 >  [DESIGN 1](https://dribbble.com/shots/21260343-Bright-Funk-Website-design-for-the-art-agency)
-> 
 >  [DESIGN 2](https://dribbble.com/shots/21269502-ZONIXX-Gym-Fitness-Website)
 
 # Getting Started
