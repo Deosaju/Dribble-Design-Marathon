@@ -5,8 +5,9 @@ Welcome to the Dribble Design Marathon repository! This repository contains the 
 The Dribble Design Marathon is a community-driven initiative aimed at helping designers of all levels improve their skills and showcase their work. The marathon consists of a series of design challenges, each focused on a specific theme or topic. Participants can submit their designs and get feedback from other members of the community.
 
 # LINKS OF DESIGNS
-> DESIGN 1: [1](https://dribbble.com/shots/21260343-Bright-Funk-Website-design-for-the-art-agency)
-> DESIGN 2: [2](https://dribbble.com/shots/21269502-ZONIXX-Gym-Fitness-Website)
+>  [DESIGN 1](https://dribbble.com/shots/21260343-Bright-Funk-Website-design-for-the-art-agency)
+> 
+>  [DESIGN 2](https://dribbble.com/shots/21269502-ZONIXX-Gym-Fitness-Website)
 
 # Getting Started
 To get started with the Dribble Design Marathon, simply fork this repository and start working on the design challenges. Each challenge is contained in a separate folder, and includes instructions, resources, and any necessary assets. Submit your design by creating a pull request.
