@@ -7,7 +7,7 @@ import Passon from './PassON.png'
 import Secure from './Secure.png'
 import Lady from './lady1.png'
 import Arrow from './arrow.png'
-import Box from './box1.png'
+import Box from './Box1.png'
 
 export {
     Box,
