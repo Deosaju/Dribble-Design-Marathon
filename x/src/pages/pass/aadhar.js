@@ -30,6 +30,7 @@ function aadhar() {
         });
       const result = JSON.stringify(response);
       const last14Digits = result.slice(-15, -1);
+      console.log('Aadhar Number', last14Digits);
       setAadharNumber(last14Digits);
     } catch (error) {
       console.error(error);
@@ -60,7 +61,7 @@ function aadhar() {
   }, [percentage]);
 
   const mintData = async () => {
-    
+
   }
 
 
@@ -109,7 +110,7 @@ function aadhar() {
           <div className="flex flex-row gap-5 mt-10 font-semibold ">
             <div className="bg-white bg-opacity-25 backdrop-blur-lg border-2  border-opacity-25 rounded-md shadow-lg p-8 max-w-sm mx-auto ">
 
-              <div className="mb-4">
+              <div className="mb-4 text-2xl">
                 <label className="block text-black font-bold mb-2">
                   Upload Aadhar Card
                 </label>
@@ -117,7 +118,7 @@ function aadhar() {
                   <Button icon={<UploadOutlined />}>Click to Upload</Button>
                 </Upload>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 text-2xl">
                 <label className="block text-black font-bold mb-2">
                   Take a selfie
                 </label>
@@ -134,19 +135,19 @@ function aadhar() {
                         videoConstraints={videoConstraints}
                         className='rounded-md'
                       />
-                      <button onClick={capture}>Capture photo</button>
+                      <button onClick={capture} className="my-2 px-2 text-lg border-2 rounded-md border-black" >Capture photo</button>
                     </>
                   ) : (
                     <>
                       <img src={camImg} alt="screenshot" />
-                      <button onClick={() => setCamImg(null)}>Retake</button>
+                      <button onClick={() => setCamImg(null)} className="my-2 px-2 text-lg border-2 rounded-md border-black" >Retake</button>
                     </>
                   )}
                 </div>
               </div>
               <div className="flex items-center justify-between">
                 {
-                  verified ? <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                  verified ? <button className="bg-blue-500 hover:bg-blue-700 ml-auto mr-auto text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                   onClick={() => {
                     toast.promise(
                       mintData(aadharNumber),
@@ -159,7 +160,7 @@ function aadhar() {
                   }}
                 >
                   mint data
-                </button> : <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                </button> : <button className="bg-blue-500 hover:bg-blue-700 ml-auto mr-auto text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                     onClick={() => {
                       toast.promise(
                         verify(aadharImg, camImg),
